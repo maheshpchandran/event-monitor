@@ -1,11 +1,11 @@
 Parameters: 
   masterUsername: 
     Type: String
-    Description: Number of shards for user stream
+    Description: master username for redshift
 
   masterPassword: 
     Type: String
-    Description: Number of shards for utm stream
+    Description: master password for redshift
   myVPC: 
     Type: String
     Description: VPC ID
