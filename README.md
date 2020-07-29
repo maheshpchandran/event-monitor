@@ -93,3 +93,5 @@ Delimiter not found error fixed by adding the following to copy parameters &quot
 3. I have created two versions of cloudformation templates for kinesis streams and firehose creation.
    [Kinesis\_IAM.yaml](https://github.com/maheshpnair/event-monitor/blob/master/kinesis_IAM.yaml) creates IAM roles along with the streams, this is not tested fully as I did not have access to another account to create a cross account role.
    [Kinesis\_streams.yaml](https://github.com/maheshpnair/event-monitor/blob/master/kinesis-streams.yaml) assumes you have created the IAM role.
+4. If we were to create the databases using lambda along with redshift creation, the lambda primer does not end. 
+   Lambda for the queries have to be triggered manually. 
