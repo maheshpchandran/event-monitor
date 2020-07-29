@@ -89,7 +89,7 @@ The cloudformation script looks for a zip in the s3 bucket that houses the follo
 
 Delimiter not found error fixed by adding the following to copy parameters &quot;json &#39;auto&#39; TRUNCATECOLUMNS blanksasnull emptyasnull&quot;
 
-1. Psycopg2 library is not present in the aws python3.7 lambda runtime, had to package it along with the code. This stopped me from adding the python script directly to the cloudformation template
-2. I have created two versions of cloudformation templates for kinesis streams and firehose creation.
-  1. [Kinesis\_IAM.yaml](https://github.com/maheshpnair/event-monitor/blob/master/kinesis_IAM.yaml) creates IAM roles along with the streams, this is not tested fully as I did not have access to another account to create a cross account role.
-  2. [Kinesis\_streams.yaml](https://github.com/maheshpnair/event-monitor/blob/master/kinesis-streams.yaml) assumes you have created the IAM role.
+2. Psycopg2 library is not present in the aws python3.7 lambda runtime, had to package it along with the code. This stopped me from adding the python script directly to the cloudformation template
+3. I have created two versions of cloudformation templates for kinesis streams and firehose creation.
+   [Kinesis\_IAM.yaml](https://github.com/maheshpnair/event-monitor/blob/master/kinesis_IAM.yaml) creates IAM roles along with the streams, this is not tested fully as I did not have access to another account to create a cross account role.
+   [Kinesis\_streams.yaml](https://github.com/maheshpnair/event-monitor/blob/master/kinesis-streams.yaml) assumes you have created the IAM role.
