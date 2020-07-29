@@ -6,7 +6,7 @@ Events ingested into Kinesis streams should be moved to RedShift for querying/an
 
 ## Proposed Architecture
 
-![alt text](http://url/to/img.png)
+![](https://github.com/maheshpnair/event-monitor/blob/master/arch.png)
 
 ## Components/Services Used
 
