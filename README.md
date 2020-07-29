@@ -33,6 +33,9 @@ Redshift copy command can be used to import the data from the intermediary S3 bu
 
 [Simple script](https://github.com/maheshpnair/event-monitor/blob/master/push_json_kinesis_streams.py) to push data to the stream, aws config file should be present, accepts the stream name, json file and number of repeats as argument.
 
+```push_json_kinesis_streams.py <stream_name> <json_file> <number_of_iterations>```
+
+
 ### Kinesis Streams and Firehose - CloudFormation
 
 [Cloudformation script](https://github.com/maheshpnair/event-monitor/blob/master/kinesis-streams.yaml) to create the two data streams accept the following parameters.
